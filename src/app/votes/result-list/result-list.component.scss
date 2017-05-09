@@ -1,0 +1,26 @@
+@import '../../../scss/global';
+
+.vote-user-pseudo {
+	&:first-child:before {
+		content: ' (';
+	}
+	&:not(:last-child):after {
+		content: ', ';
+	}
+	&:last-child:after {
+		content: ')';
+	}
+}
+
+.vote-item {
+	.vote-count {
+		color: $primary-color;
+		&:before {
+			content: ' - ';
+			color: $dark-gray;
+		}
+	}
+	.vote-users {
+		color: $secondary-color;
+	}
+}

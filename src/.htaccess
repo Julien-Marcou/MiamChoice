@@ -1,0 +1,8 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule api/(.*) api/index.php [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule (.*) index.html [L]
+</IfModule>

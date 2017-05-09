@@ -1,0 +1,21 @@
+<section>
+
+	<h2>Vous cherchez un endroit où manger ?</h2>
+
+	<input id="filters-toggle" class="expand-collapse-toogle" type="checkbox">
+	<label for="filters-toggle" class="button expand-collapse-button"></label>
+	<div class="expand-collapse-section">
+		<app-place-filters (filterChange)="onFilterChange()"></app-place-filters>
+	</div>
+
+</section>
+
+<section>
+
+	<h2>Résultats</h2>
+
+	<app-place-map [allPlaces]="places" [displayedPlaces]="filteredPlaces"></app-place-map>
+
+	<app-place-list [places]="filteredPlaces"></app-place-list>
+
+</section>

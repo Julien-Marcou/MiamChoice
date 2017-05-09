@@ -1,0 +1,18 @@
+.expand-collapse-toogle {
+	display: none;
+	visibility: hidden;
+}
+.expand-collapse-toogle ~ .expand-collapse-button:after {
+	cursor: pointer;
+	content: "+ Afficher les filtres";
+}
+.expand-collapse-toogle:checked ~ .expand-collapse-button:after {
+	content: "- Masquer les filtres";
+}
+.expand-collapse-toogle ~ .expand-collapse-section {
+	display: none;
+}
+.expand-collapse-toogle:checked ~ .expand-collapse-section {
+	display: block;
+}
+

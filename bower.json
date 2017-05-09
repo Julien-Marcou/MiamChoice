@@ -1,0 +1,11 @@
+{
+  "name": "miam-choice",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}

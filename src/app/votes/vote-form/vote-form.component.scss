@@ -1,0 +1,8 @@
+@import '../../../scss/global';
+
+.place-item {
+	cursor: pointer;
+	input:checked ~ span {
+		color: $primary-color
+	}
+}

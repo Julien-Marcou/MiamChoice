@@ -1,0 +1,9 @@
+<section>
+	<h2>Ce midi je mange à</h2>
+	<app-vote-form [places]="places" [user]="user" (voteSubmit)="onVoteSubmit()"></app-vote-form>
+</section>
+
+<section>
+	<h2>Que font les autres</h2>
+	<app-result-list [places]="places" [users]="users"></app-result-list>
+</section>

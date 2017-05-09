@@ -1,0 +1,10 @@
+@import '../../../scss/global';
+
+.place-item {
+	// Responsive margins using foundation gutters
+	@each $breakpoint, $value in $grid-column-gutter {
+		@include breakpoint($breakpoint) {
+			margin-bottom: $value;
+		}
+	}
+}

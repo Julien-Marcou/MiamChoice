@@ -1,0 +1,40 @@
+<form>
+
+	<div class="row">
+		<div class="small-6 medium-4 large-4 columns">
+			<h3>Types</h3>
+			<label *ngFor="let type of types">
+				<input class="display-inline" type="checkbox" value="{{type.key}}" [(ngModel)]="type.checked" (change)="typeChange()" name="types[{{type.key}}]">
+				{{type.value}}
+			</label>
+		</div>
+
+		<div class="small-6 medium-4 large-4 columns">
+			<h3>Ouverture</h3>
+			<label *ngFor="let day of days">
+				<input type="checkbox" value="{{day.key}}" [(ngModel)]="day.checked" (change)="dayChange()" name="days[{{day.key}}]">
+				{{day.value}} <span *ngIf="day.isToday">(Aujourd'hui)</span>
+			</label>
+		</div>
+
+		<div class="small-6 medium-4 large-4 columns">
+			<h3>Options</h3>
+			<label *ngFor="let option of options">
+				<input type="checkbox" value="{{option.key}}" [(ngModel)]="option.checked" (change)="optionChange()" name="options[{{option.key}}]">
+				{{option.value}}
+			</label>
+		</div>
+
+		<div class="small-6 medium-4 large-4 columns">
+			<h3>Distance à Niji</h3>
+			<input class="radius-filter" type="range" [(ngModel)]="radius" (change)="radiusChange()" step="100" min="200" max="5000" name="radius">
+			<span class="radius-distance">{{radius | distance: true}}</span>
+		</div>
+
+		<div class="small-12 medium-4 large-4 columns">
+			<h3>Mots clés</h3>
+			<input type="text" [(ngModel)]="keywords" [formControl]="searchInput" name="keywords">
+		</div>
+	</div>
+
+</form>
