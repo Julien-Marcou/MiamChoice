@@ -179,14 +179,14 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'ponte-vechio',
-			'name': 'Ponte Vechio',
+			'id': 'ponte-vecchio',
+			'name': 'Ponte Vecchio',
 			'latitude': 48.116400,
 			'longitude': -1.605089,
 			'description': 'Pizzeria',
 			'distance-to-niji': 1000,
 			'type': 'restaurant',
-			'keywords': ['ponte', 'vechio', 'pizzeria', 'pizza', 'pasta', 'pate', 'grill', 'saladerie', 'salade', 'autre'],
+			'keywords': ['ponte', 'vecchio', 'pizzeria', 'pizza', 'pasta', 'pate', 'grill', 'saladerie', 'salade', 'autre'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
