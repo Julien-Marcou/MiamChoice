@@ -1,23 +1,31 @@
 @import '../../../scss/global';
 
 .place {
+	position: relative;
 	background: $light-gray;
 	padding: 15px;
+	height: 400px;
 	.place-name {
-		line-height: 1.1em;
-		height: 2.2em;
+		min-height: 70px;
+		max-height: 100px;
 		overflow: hidden;
+		line-height: 1.1em;
 	}
 	.place-logo {
+		height: 200px;
+		line-height: 200px;
 		text-align: center;
 	}
 	.place-description {
-		margin-top: 10px;
+		padding-top: 15px;
 		line-height: 1.4em;
-		height: 2.8em;
+		height: 100px;
 		overflow: hidden;
 	}
 	.place-distance {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
 		color: $dark-gray;
 		text-align: right;
 	}
