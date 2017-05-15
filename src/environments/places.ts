@@ -466,5 +466,17 @@ export const places = {
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
+		{
+			'id': 'la-table-d-hippolyte',
+			'name': 'La table d\'hippolyte',
+			'latitude': 48.099473,
+			'longitude': -1.614823,
+			'description': 'Restaurant gourmand',
+			'distance-to-niji': 3000,
+			'type': 'restaurant',
+			'keywords': ['cuisine traditionnelle'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		}
 	]
 };
