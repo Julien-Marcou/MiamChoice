@@ -119,6 +119,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'cap-o-saveurs',
+			'name': 'Cap ô Saveurs',
+			'latitude': 48.114510,
+			'longitude': -1.621700,
+			'description': 'L\'indémodable Ibis, presque une seconde cantine de Niji',
+			'distance-to-niji': 400,
+			'type': 'restaurant',
+			'keywords': ['cuisine traditionnelle', 'viande', 'poisson', 'buffet'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'kfc',
 			'name': 'KFC',
 			'latitude': 48.114381,
@@ -215,6 +227,42 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'soleil-kebab',
+			'name': 'Soleil Kébab',
+			'latitude': 48.117719,
+			'longitude': -1.609021,
+			'description': 'Bon Kébab à Cesson',
+			'distance-to-niji': 1100,
+			'type': 'fast',
+			'keywords': ['kebab', 'frite'],
+			'options': ['place', 'emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'chouet',
+			'name': 'Boulangerie Chouët',
+			'latitude': 48.114439,
+			'longitude': -1.602738,
+			'description': 'Patisseries de qualité !',
+			'distance-to-niji': 1200,
+			'type': 'sandwich',
+			'keywords': ['boulangerie', 'sandwich', 'dessert'],
+			'options': ['emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'cafe-paris',
+			'name': 'Le Café de Paris',
+			'latitude': 48.114254,
+			'longitude': -1.602007,
+			'description': 'Bon bistrot, esprit convivial, prix abordable',
+			'distance-to-niji': 1300,
+			'type': 'bistrot',
+			'keywords': ['cuisine traditionnelle'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'ange',
 			'name': 'Boulangerie Ange',
 			'latitude': 48.107362,
@@ -239,6 +287,42 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'favola',
+			'name': 'La Favola',
+			'latitude': 48.108302,
+			'longitude': -1.612603,
+			'description': 'Pizzeria',
+			'distance-to-niji': 1500,
+			'type': 'restaurant',
+			'keywords': ['pizza', 'grill'],
+			'options': ['place', 'emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'class-croute',
+			'name': 'Class\'Croute',
+			'latitude': 48.107734,
+			'longitude': -1.612251,
+			'description': 'Sandwich et salade top, un des fournisseurs des réunions de site',
+			'distance-to-niji': 1500,
+			'type': 'sandwich',
+			'keywords': ['sandwich', 'salade'],
+			'options': ['place', 'emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'tournebride',
+			'name': 'Le Tournebride',
+			'latitude': 48.113948,
+			'longitude': -1.636839,
+			'description': 'Aka le Tournebide, idéal bistrot pour un vendredi midi ou une journée difficile...',
+			'distance-to-niji': 1600,
+			'type': 'bistrot',
+			'keywords': ['cuisine traditionnelle'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'cosy',
 			'name': 'Le Cosy',
 			'latitude': 48.114005,
@@ -247,6 +331,18 @@ export const places = {
 			'distance-to-niji': 2000,
 			'type': 'restaurant',
 			'keywords': ['cosy', 'pizzeria', 'pizza', 'grill', 'burger', 'autre'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'ptite-flambee',
+			'name': 'La P\'tite Flambée',
+			'latitude': 48.105357,
+			'longitude': -1.628327,
+			'description': 'Pizzeria - Grill - Burger - Crêpe',
+			'distance-to-niji': 2200,
+			'type': 'restaurant',
+			'keywords': ['pizza', 'grill', 'burger'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -311,6 +407,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'laurette',
+			'name': 'Chez Laurette',
+			'latitude': 48.101107,
+			'longitude': -1.632770,
+			'description': 'Bistrot / Resto, très bonne cuisine, service au top',
+			'distance-to-niji': 3000,
+			'type': 'restaurant',
+			'keywords': ['cuisine traditionnelle'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'cot-boeuf',
 			'name': 'Cot\' et Boeuf',
 			'latitude': 48.132626,
@@ -319,6 +427,18 @@ export const places = {
 			'distance-to-niji': 3100,
 			'type': 'restaurant',
 			'keywords': ['cot', 'boeuf', 'grill', 'viande', 'pizza'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'hippolyte',
+			'name': 'La table d\'Hippolyte',
+			'latitude': 48.099473,
+			'longitude': -1.614823,
+			'description': 'Restaurant gourmand',
+			'distance-to-niji': 3100,
+			'type': 'restaurant',
+			'keywords': ['cuisine traditionnelle'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -347,90 +467,6 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'cafe-paris',
-			'name': 'Le Café de Paris',
-			'latitude': 48.114254,
-			'longitude': -1.602007,
-			'description': 'Bon bistrot, esprit convivial, prix abordable',
-			'distance-to-niji': 1300,
-			'type': 'bistrot',
-			'keywords': ['cuisine traditionnelle'],
-			'options': ['place'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'favola',
-			'name': 'La Favola',
-			'latitude': 48.108302,
-			'longitude': -1.612603,
-			'description': 'Pizzeria',
-			'distance-to-niji': 1500,
-			'type': 'restaurant',
-			'keywords': ['pizza', 'grill'],
-			'options': ['place', 'emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'ptite-flambee',
-			'name': 'La P\'tite Flambée',
-			'latitude': 48.105357,
-			'longitude': -1.628327,
-			'description': 'Pizzeria - Grill - Burger - Crêpe',
-			'distance-to-niji': 2200,
-			'type': 'restaurant',
-			'keywords': ['pizza', 'grill', 'burger'],
-			'options': ['place'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'laurette',
-			'name': 'Chez Laurette',
-			'latitude': 48.101107,
-			'longitude': -1.632770,
-			'description': 'Bistrot / Resto, très bonne cuisine, service au top',
-			'distance-to-niji': 3000,
-			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle'],
-			'options': ['place'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'chouet',
-			'name': 'Boulangerie Chouët',
-			'latitude': 48.114439,
-			'longitude': -1.602738,
-			'description': 'Patisseries de qualité !',
-			'distance-to-niji': 1200,
-			'type': 'sandwich',
-			'keywords': ['boulangerie', 'sandwich', 'dessert'],
-			'options': ['emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'cap-o-saveurs',
-			'name': 'Cap ô Saveurs',
-			'latitude': 48.114510,
-			'longitude': -1.621700,
-			'description': 'L\'indémodable Ibis, presque une seconde cantine de Niji',
-			'distance-to-niji': 400,
-			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle', 'viande', 'poisson', 'buffet'],
-			'options': ['place'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'tournebride',
-			'name': 'Le Tournebride',
-			'latitude': 48.113948,
-			'longitude': -1.636839,
-			'description': 'Aka le Tournebide, idéal bistrot pour un vendredi midi ou une journée difficile...',
-			'distance-to-niji': 1600,
-			'type': 'bistrot',
-			'keywords': ['cuisine traditionnelle'],
-			'options': ['place'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
 			'id': 'victoire',
 			'name': 'Restaurant la Victoire',
 			'latitude': 48.145756,
@@ -440,42 +476,6 @@ export const places = {
 			'type': 'restaurant',
 			'keywords': ['cuisine traditionnelle', 'buffet', 'vin'],
 			'options': ['place', 'emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'soleil-kebab',
-			'name': 'Soleil Kébab',
-			'latitude': 48.117719,
-			'longitude': -1.609021,
-			'description': 'Bon Kébab à Cesson',
-			'distance-to-niji': 1100,
-			'type': 'fast',
-			'keywords': ['kebab', 'frite'],
-			'options': ['place', 'emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'class-croute',
-			'name': 'Class\'Croute',
-			'latitude': 48.107734,
-			'longitude': -1.612251,
-			'description': 'Sandwich et salade top, un des fournisseurs des réunions de site',
-			'distance-to-niji': 1500,
-			'type': 'sandwich',
-			'keywords': ['sandwich', 'salade'],
-			'options': ['place', 'emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
-		},
-		{
-			'id': 'hippolyte',
-			'name': 'La table d\'Hippolyte',
-			'latitude': 48.099473,
-			'longitude': -1.614823,
-			'description': 'Restaurant gourmand',
-			'distance-to-niji': 3100,
-			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle'],
-			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		}
 	]
