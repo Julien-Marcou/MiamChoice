@@ -27,8 +27,11 @@ export class VotesComponent {
 	}
 
 	onVoteSubmit() {
-		this.usersService.postUser(this.user).then(success => {
-			if(success) {
+		this.usersService.postUser(this.user).then(response => {
+			if(response.error) {
+				alert(response.message);
+			}
+			else {
 				this.usersService.saveCurrentUser();
 				this.resultsComponent.updateResults();
 			}

@@ -36,25 +36,43 @@ else if($method === 'POST' && $request === '/user') {
 		$usersDb->users = new stdClass();
 	}
 
-	// Set the user
-	$usersDb->users->{$user->uuid} = $user;
+	$userAlreadyExists = false;
+	foreach($usersDb->users as $savedUser) {
+		if($savedUser->pseudo === $user->pseudo && $savedUser->uuid !== $user->uuid) {
+			$userAlreadyExists = true;
+			break;
+		}
+	}
 
-	// Save users databases
-	if(file_put_contents($usersFile, json_encode($usersDb, JSON_PRETTY_PRINT)) === false) {
+	if($userAlreadyExists) {
 		// Return error
-		header('Content-Type: application/json', true, 500);
+		header('Content-Type: application/json', true, 403);
 		echo json_encode([
-			'status' => 'ko',
-			'message' => 'Error while creating the content !'
+			'error' => true,
+			'message' => 'Cannot use the same pseudo as another person !'
 		]);
 	}
 	else {
-		// Return success
-		header('Content-Type: application/json', true, 201);
-		echo json_encode([
-			'status' => 'ok',
-			'message' => 'Content created !'
-		]);
+		// Set the user
+		$usersDb->users->{$user->uuid} = $user;
+
+		// Save users databases
+		if(file_put_contents($usersFile, json_encode($usersDb, JSON_PRETTY_PRINT)) === false) {
+			// Return error
+			header('Content-Type: application/json', true, 403);
+			echo json_encode([
+				'error' => true,
+				'message' => 'Error while creating the content !'
+			]);
+		}
+		else {
+			// Return success
+			header('Content-Type: application/json', true, 201);
+			echo json_encode([
+				'error' => false,
+				'message' => 'Content created !'
+			]);
+		}
 	}
 }
 else {

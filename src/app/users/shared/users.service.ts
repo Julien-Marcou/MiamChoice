@@ -39,11 +39,17 @@ export class UsersService {
 		localStorage.setItem('user', this.currentUser.toJson());
 	}
 
-	postUser(user: User): Promise<boolean> {
+	postUser(user: User): Promise<any> {
 		return this.http.post('http://miam-choice.julien-marcou.fr/api/user', user)
 			.toPromise()
-			.then(response => response.status === 201 ? true : false)
-			.catch(error => Promise.reject(error));
+			.then(response => response.json())
+			.catch(error => {
+				let response = error.json();
+				if(response.error && response.message) {
+					return response;
+				}
+				Promise.reject(error);
+			});
 	}
 
 	getUsers(): Promise<User[]> {
@@ -60,7 +66,7 @@ export class UsersService {
 				users[this.currentUser.uuid] = this.currentUser;
 				return users;
 			})
-			.catch(error =>  Promise.reject(error));
+			.catch(error => Promise.reject(error));
 	}
 
 	randomGuid(): string {
