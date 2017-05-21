@@ -260,7 +260,7 @@ export const places = {
 			'type': 'sandwich',
 			'keywords': ['chouet', 'chouët', 'boulangerie', 'sandwich', 'patisserie'],
 			'options': ['emporte'],
-			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+			'opening-days': ['mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
 			'id': 'cafe-paris',
