@@ -335,7 +335,7 @@ export const places = {
 			'opening-days': ['mercredi']
 		},
 		{
-			'id': 'le-wok',
+			'id': 'wok',
 			'name': 'Le Wok Restaurant',
 			'latitude': 48.129918,
 			'longitude': -1.642752,
@@ -347,7 +347,7 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'le-cafe-de-paris',
+			'id': 'cafe-paris',
 			'name': 'Le Café de Paris',
 			'latitude': 48.114254,
 			'longitude': -1.602007,
@@ -359,7 +359,7 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'la-favola',
+			'id': 'favola',
 			'name': 'La Favola',
 			'latitude': 48.108302,
 			'longitude': -1.612603,
@@ -371,7 +371,7 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'la-ptite-flambee',
+			'id': 'ptite-flambee',
 			'name': 'La P\'tite Flambée',
 			'latitude': 48.105357,
 			'longitude': -1.628327,
@@ -383,7 +383,7 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'chez-laurette',
+			'id': 'laurette',
 			'name': 'Chez Laurette',
 			'latitude': 48.101107,
 			'longitude': -1.632770,
@@ -408,7 +408,7 @@ export const places = {
 		},
 		{
 			'id': 'cap-o-saveurs',
-			'name': 'Cap ô Saveurs alias L\'Ibis',
+			'name': 'Cap ô Saveurs',
 			'latitude': 48.114510,
 			'longitude': -1.621700,
 			'description': 'L\'indémodable Ibis, presque une seconde cantine de Niji',
@@ -419,11 +419,11 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'le-tournebride',
-			'name': 'Le Tournebride / Tournebide',
+			'id': 'tournebride',
+			'name': 'Le Tournebride',
 			'latitude': 48.113948,
 			'longitude': -1.636839,
-			'description': 'Idéal bistrot pour un vendredi midi ou une journée difficile...',
+			'description': 'Aka le Tournebide, idéal bistrot pour un vendredi midi ou une journée difficile...',
 			'distance-to-niji': 1600,
 			'type': 'bistrot',
 			'keywords': ['cuisine traditionnelle'],
@@ -431,8 +431,8 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'la-victoire',
-			'name': 'Restaurant La Victoire',
+			'id': 'victoire',
+			'name': 'Restaurant la Victoire',
 			'latitude': 48.145756,
 			'longitude': -1.607730,
 			'description': 'Routier, esprit convivial, vin illimité, très bon plat, entrée en mode buffet',
@@ -444,7 +444,7 @@ export const places = {
 		},
 		{
 			'id': 'soleil-kebab',
-			'name': 'Soleil kébab',
+			'name': 'Soleil Kébab',
 			'latitude': 48.117719,
 			'longitude': -1.609021,
 			'description': 'Bon Kébab à Cesson',
@@ -456,7 +456,7 @@ export const places = {
 		},
 		{
 			'id': 'class-croute',
-			'name': 'Class\'croute',
+			'name': 'Class\'Croute',
 			'latitude': 48.107734,
 			'longitude': -1.612251,
 			'description': 'Sandwich et salade top, un des fournisseurs des réunions de site',
@@ -467,8 +467,8 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
-			'id': 'la-table-d-hippolyte',
-			'name': 'La table d\'hippolyte',
+			'id': 'hippolyte',
+			'name': 'La table d\'Hippolyte',
 			'latitude': 48.099473,
 			'longitude': -1.614823,
 			'description': 'Restaurant gourmand',
