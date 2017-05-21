@@ -114,7 +114,7 @@ export const places = {
 			'description': 'Crèperie à 2 pas de Niji',
 			'distance-to-niji': 300,
 			'type': 'restaurant',
-			'keywords': ['hublais', 'crèperie', 'crèpe', 'grill', 'saladerie', 'salade', 'autre'],
+			'keywords': ['hublais', 'crèperie', 'crèpe', 'grill', 'saladerie', 'salade'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -126,7 +126,7 @@ export const places = {
 			'description': 'L\'indémodable Ibis, presque une seconde cantine de Niji',
 			'distance-to-niji': 400,
 			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle', 'viande', 'poisson', 'buffet'],
+			'keywords': ['cap', 'saveur', 'traditionnel', 'viande', 'poisson', 'buffet'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -162,7 +162,7 @@ export const places = {
 			'description': 'Restaurant Grill',
 			'distance-to-niji': 600,
 			'type': 'restaurant',
-			'keywords': ['nota', 'bene', 'pizzeria', 'pizza', 'autre'],
+			'keywords': ['nota', 'bene', 'pizzeria', 'pizza'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -174,7 +174,7 @@ export const places = {
 			'description': 'Restaurant Grill',
 			'distance-to-niji': 700,
 			'type': 'restaurant',
-			'keywords': ['boucherie', 'grill', 'viande', 'autre'],
+			'keywords': ['boucherie', 'grill', 'viande'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -186,7 +186,7 @@ export const places = {
 			'description': 'Restaurant bio éco-résponsble',
 			'distance-to-niji': 1000,
 			'type': 'restaurant',
-			'keywords': ['biocop', 'biocoop', 'bio', 'autre'],
+			'keywords': ['biocop', 'biocoop', 'bio'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -198,7 +198,7 @@ export const places = {
 			'description': 'Pizzeria',
 			'distance-to-niji': 1000,
 			'type': 'restaurant',
-			'keywords': ['ponte', 'vecchio', 'pizzeria', 'pizza', 'pasta', 'pate', 'grill', 'saladerie', 'salade', 'autre'],
+			'keywords': ['ponte', 'vecchio', 'pizzeria', 'pizza', 'pasta', 'pate', 'grill', 'saladerie', 'salade'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -210,7 +210,7 @@ export const places = {
 			'description': 'Restaurant favoris de David',
 			'distance-to-niji': 1100,
 			'type': 'restaurant',
-			'keywords': ['belle', 'equipe', 'burger', 'frite', 'autre'],
+			'keywords': ['belle', 'equipe', 'burger', 'frite'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -222,7 +222,7 @@ export const places = {
 			'description': 'Restaurant',
 			'distance-to-niji': 1100,
 			'type': 'restaurant',
-			'keywords': ['edgar', 'autre'],
+			'keywords': ['edgar'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -234,7 +234,7 @@ export const places = {
 			'description': 'Bon Kébab à Cesson',
 			'distance-to-niji': 1100,
 			'type': 'fast',
-			'keywords': ['kebab', 'frite'],
+			'keywords': ['soleil', 'kébab', 'kebab', 'frite'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -246,7 +246,7 @@ export const places = {
 			'description': 'Patisseries de qualité !',
 			'distance-to-niji': 1200,
 			'type': 'sandwich',
-			'keywords': ['boulangerie', 'sandwich', 'dessert'],
+			'keywords': ['chouet', 'chouët', 'boulangerie', 'sandwich', 'patisserie'],
 			'options': ['emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -258,7 +258,7 @@ export const places = {
 			'description': 'Bon bistrot, esprit convivial, prix abordable',
 			'distance-to-niji': 1300,
 			'type': 'bistrot',
-			'keywords': ['cuisine traditionnelle'],
+			'keywords': ['café', 'paris', 'traditionnel'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -282,7 +282,7 @@ export const places = {
 			'description': 'Brasserie conviviale avec terrasse',
 			'distance-to-niji': 1500,
 			'type': 'brasserie',
-			'keywords': ['caf', 'tartine', 'charcuterie', 'fromage', 'bocal', 'bière', 'autre'],
+			'keywords': ['caf', 'cave', 'flo', 'tartine', 'charcuterie', 'fromage', 'bocal', 'bière'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -294,7 +294,7 @@ export const places = {
 			'description': 'Pizzeria',
 			'distance-to-niji': 1500,
 			'type': 'restaurant',
-			'keywords': ['pizza', 'grill'],
+			'keywords': ['favola', 'pizza', 'grill'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -306,7 +306,7 @@ export const places = {
 			'description': 'Sandwich et salade top, un des fournisseurs des réunions de site',
 			'distance-to-niji': 1500,
 			'type': 'sandwich',
-			'keywords': ['sandwich', 'salade'],
+			'keywords': ['class', 'croute', 'sandwich', 'salade'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -318,7 +318,7 @@ export const places = {
 			'description': 'Aka le Tournebide, idéal bistrot pour un vendredi midi ou une journée difficile...',
 			'distance-to-niji': 1600,
 			'type': 'bistrot',
-			'keywords': ['cuisine traditionnelle'],
+			'keywords': ['tournebride', 'tournebide', 'traditionnel'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -330,7 +330,7 @@ export const places = {
 			'description': 'Restaurant Grill',
 			'distance-to-niji': 2000,
 			'type': 'restaurant',
-			'keywords': ['cosy', 'pizzeria', 'pizza', 'grill', 'burger', 'autre'],
+			'keywords': ['cosy', 'pizzeria', 'pizza', 'grill', 'burger'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -342,7 +342,7 @@ export const places = {
 			'description': 'Pizzeria - Grill - Burger - Crêpe',
 			'distance-to-niji': 2200,
 			'type': 'restaurant',
-			'keywords': ['pizza', 'grill', 'burger'],
+			'keywords': ['ptite', 'petite', 'flambée', 'pizza', 'grill', 'burger'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -354,7 +354,7 @@ export const places = {
 			'description': 'Restaurant Grill',
 			'distance-to-niji': 2400,
 			'type': 'restaurant',
-			'keywords': ['buffalo', 'grill', 'viande', 'autre'],
+			'keywords': ['buffalo', 'grill', 'viande'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -378,7 +378,7 @@ export const places = {
 			'description': 'Centre Commercial Carrefour',
 			'distance-to-niji': 2400,
 			'type': 'commercial',
-			'keywords': ['carrefour', 'sandwich', 'kebab', 'pizza', 'autre'],
+			'keywords': ['carrefour', 'sandwich', 'kebab', 'pizza'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -402,7 +402,7 @@ export const places = {
 			'description': 'Centre Commercial Intermarché',
 			'distance-to-niji': 3000,
 			'type': 'commercial',
-			'keywords': ['longchamps', 'longschamps', 'sandwich', 'autre'],
+			'keywords': ['longchamps', 'longschamps', 'sandwich'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -414,7 +414,7 @@ export const places = {
 			'description': 'Bistrot / Resto, très bonne cuisine, service au top',
 			'distance-to-niji': 3000,
 			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle'],
+			'keywords': ['laurette', 'traditionnel'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -438,7 +438,7 @@ export const places = {
 			'description': 'Restaurant gourmand',
 			'distance-to-niji': 3100,
 			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle'],
+			'keywords': ['hippolyte', 'traditionnel'],
 			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -462,7 +462,7 @@ export const places = {
 			'description': 'Restaurant asiatique',
 			'distance-to-niji': 3500,
 			'type': 'restaurant',
-			'keywords': ['asiatique', 'thai', 'sushis', 'nems', 'raviolis', 'Bô Boune', 'woks'],
+			'keywords': ['wok', 'asiatique', 'thai', 'sushis', 'nems', 'raviolis', 'woks'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -474,7 +474,7 @@ export const places = {
 			'description': 'Routier, esprit convivial, vin illimité, très bon plat, entrée en mode buffet',
 			'distance-to-niji': 4500,
 			'type': 'restaurant',
-			'keywords': ['cuisine traditionnelle', 'buffet', 'vin'],
+			'keywords': ['victoire', 'traditionnel', 'buffet', 'vin'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		}
