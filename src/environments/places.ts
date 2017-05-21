@@ -203,6 +203,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'cuisine',
+			'name': 'Food Truck La Cuisine',
+			'latitude': 48.112549,
+			'longitude': -1.608843,
+			'description': 'Food Truck sur la parking de Jardiland',
+			'distance-to-niji': 1100,
+			'type': 'truck',
+			'keywords': ['cuisine', 'sandwich'],
+			'options': ['emporte'],
+			'opening-days': ['mercredi']
+		},
+		{
 			'id': 'belle-equipe',
 			'name': 'La Belle Équipe',
 			'latitude': 48.116588,
@@ -308,6 +320,18 @@ export const places = {
 			'type': 'sandwich',
 			'keywords': ['class', 'croute', 'sandwich', 'salade'],
 			'options': ['place', 'emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'hippocampe',
+			'name': 'L\'Hippocampe',
+			'latitude': 48.119256,
+			'longitude': -1.602750,
+			'description': 'Petit restaurant de la piscine de Césson.',
+			'distance-to-niji': 1500,
+			'type': 'restaurant',
+			'keywords': ['hippocampe'],
+			'options': ['place'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
