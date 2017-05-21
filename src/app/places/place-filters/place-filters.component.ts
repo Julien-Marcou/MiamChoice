@@ -18,7 +18,7 @@ export class PlaceFiltersComponent {
 	types: any[];
 	options: any[];
 	days: any[];
-	radius = 6000;
+	radius = 5000;
 	keywords = '';
 
 	searchInput = new FormControl();
