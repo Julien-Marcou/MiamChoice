@@ -287,6 +287,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'aviateurs',
+			'name': 'Les Aviateurs',
+			'latitude': 48.107532,
+			'longitude': -1.614216,
+			'description': 'Restaurant, spécialités au feu de bois',
+			'distance-to-niji': 1400,
+			'type': 'restaurant',
+			'keywords': ['aviateurs', 'pizza', 'burger', 'grill', 'pasta', 'pate', 'feu', 'bois'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'caf',
 			'name': 'Cave à Flo',
 			'latitude': 48.109055,
