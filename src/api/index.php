@@ -36,6 +36,8 @@ else if($method === 'POST' && $request === '/user') {
 		$usersDb->users = new stdClass();
 	}
 
+	// Check if user already exists
+	$user->pseudo = trim($user->pseudo);
 	$userAlreadyExists = false;
 	foreach($usersDb->users as $savedUser) {
 		if($savedUser->pseudo === $user->pseudo && $savedUser->uuid !== $user->uuid) {
