@@ -40,7 +40,7 @@ else if($method === 'POST' && $request === '/user') {
 	$user->pseudo = trim($user->pseudo);
 	$userAlreadyExists = false;
 	foreach($usersDb->users as $savedUser) {
-		if($savedUser->pseudo === $user->pseudo && $savedUser->uuid !== $user->uuid) {
+		if(strtolower($savedUser->pseudo) === strtolower($user->pseudo) && $savedUser->uuid !== $user->uuid) {
 			$userAlreadyExists = true;
 			break;
 		}
