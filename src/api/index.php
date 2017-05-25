@@ -54,6 +54,14 @@ else if($method === 'POST' && $request === '/user') {
 			'message' => 'Cannot use the same pseudo as another person !'
 		]);
 	}
+	else if($user->pseudo === '') {
+		// Return error
+		header('Content-Type: application/json', true, 403);
+		echo json_encode([
+			'error' => true,
+			'message' => 'Pseudo cannot be empty !'
+		]);
+	}
 	else {
 		// Set the user
 		$usersDb->users->{$user->uuid} = $user;
@@ -79,6 +87,6 @@ else if($method === 'POST' && $request === '/user') {
 }
 else {
 	// Return 404
-	header("HTTP/1.1 404 Not Found", true, 404);
-	echo "404 Not Found";
+	header('HTTP/1.1 404 Not Found', true, 404);
+	echo '404 Not Found';
 }
