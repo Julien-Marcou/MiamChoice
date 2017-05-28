@@ -2,5 +2,9 @@
 @import 'foundation';
 
 html {
-	overflow-y:scroll;
+	overflow-y: scroll;
+}
+
+button {
+	outline: none;
 }
