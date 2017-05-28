@@ -1,4 +1,4 @@
-import { Component, OnChanges, ViewChild, Input } from '@angular/core';
+import { Component, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
 
 import { Place } from '../shared/place.model';
 
@@ -8,7 +8,7 @@ import { Place } from '../shared/place.model';
 	styleUrls: ['./place-map.component.scss']
 })
 
-export class PlaceMapComponent implements OnChanges {
+export class PlaceMapComponent implements OnChanges, OnDestroy {
 	@ViewChild('map') mapElement;
 
 	@Input() allPlaces: Place[] = [];
@@ -19,6 +19,14 @@ export class PlaceMapComponent implements OnChanges {
 
 	ngOnChanges() {
 		this.renderGoogleMap();
+	}
+
+	ngOnDestroy() {
+		this.infoWindow.setContent(null);
+		this.infoWindow.close();
+		for(let place of this.allPlaces) {
+			google.maps.event.clearInstanceListeners(place.marker);
+		}
 	}
 
 	renderGoogleMap() {
