@@ -50,6 +50,8 @@ export class PlaceMapComponent implements OnChanges {
 		let bounds = new google.maps.LatLngBounds();
 		bounds.extend(place.marker.getPosition());
 		this.googleMap.fitBounds(bounds);
+
+		window.scrollTo(0, this.mapElement.nativeElement.offsetTop - 15);
 	}
 
 	centerOnPlaces(places: Place[]) {
