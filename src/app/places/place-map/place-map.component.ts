@@ -30,26 +30,33 @@ export class PlaceMapComponent implements OnChanges {
 			});
 		}
 
-		let bounds = new google.maps.LatLngBounds();
 		for(let place of this.allPlaces) {
 			if(this.displayedPlaces.contains(place)) {
 				if(place.marker.getMap() !== this.googleMap) {
 					place.marker.setMap(this.googleMap);
 				}
-				bounds.extend(place.marker.getPosition());
 			}
 			else {
 				place.marker.setMap(null);
 			}
 		}
+
 		if(!this.displayedPlaces.isEmpty()) {
-			this.googleMap.fitBounds(bounds);
+			this.centerOnPlaces(this.displayedPlaces);
 		}
 	}
 
 	centerOnPlace(place: Place) {
 		let bounds = new google.maps.LatLngBounds();
 		bounds.extend(place.marker.getPosition());
+		this.googleMap.fitBounds(bounds);
+	}
+
+	centerOnPlaces(places: Place[]) {
+		let bounds = new google.maps.LatLngBounds();
+		for(let place of places) {
+			bounds.extend(place.marker.getPosition());
+		}
 		this.googleMap.fitBounds(bounds);
 	}
 }
