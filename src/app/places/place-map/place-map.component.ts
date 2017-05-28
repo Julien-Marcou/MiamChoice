@@ -15,6 +15,7 @@ export class PlaceMapComponent implements OnChanges {
 	@Input() displayedPlaces: Place[] = [];
 
 	googleMap: any;
+	infoWindow: any;
 
 	ngOnChanges() {
 		this.renderGoogleMap();
@@ -28,6 +29,15 @@ export class PlaceMapComponent implements OnChanges {
 				minZoom: 12,
 				maxZoom: 18
 			});
+		}
+
+		if(!this.infoWindow) {
+			this.infoWindow = new google.maps.InfoWindow();
+			for(let place of this.allPlaces) {
+				place.marker.addListener('click', () => {
+					this.openInfoWindowOnPlace(place);
+				});
+			}
 		}
 
 		for(let place of this.allPlaces) {
@@ -46,10 +56,17 @@ export class PlaceMapComponent implements OnChanges {
 		}
 	}
 
+	openInfoWindowOnPlace(place: Place) {
+		this.infoWindow.setContent(place.name);
+		this.infoWindow.open(this.googleMap, place.marker);
+	}
+
 	centerOnPlace(place: Place) {
 		let bounds = new google.maps.LatLngBounds();
 		bounds.extend(place.marker.getPosition());
 		this.googleMap.fitBounds(bounds);
+
+		this.openInfoWindowOnPlace(place);
 
 		window.scrollTo(0, this.mapElement.nativeElement.offsetTop - 15);
 	}
