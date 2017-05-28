@@ -1,7 +1,7 @@
 <div class="row place-list">
 	<ng-container *ngFor="let place of places; let last = last">
 		<div class="place-item small-6 medium-4 large-3 columns" [ngClass]="{end: last}">
-			<app-place [place]="place"></app-place>
+			<app-place [place]="place" (placeSelect)="onPlaceSelect($event)"></app-place>
 		</div>
 	</ng-container>
 </div>

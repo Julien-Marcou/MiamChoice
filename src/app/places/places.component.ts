@@ -3,6 +3,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Place } from './shared/place.model';
 import { PlacesService } from '../places/shared/places.service';
 import { PlaceFiltersComponent } from './place-filters/place-filters.component';
+import { PlaceMapComponent } from './place-map/place-map.component';
 
 @Component({
 	templateUrl: './places.component.html',
@@ -11,6 +12,7 @@ import { PlaceFiltersComponent } from './place-filters/place-filters.component';
 
 export class PlacesComponent {
 	@ViewChild(PlaceFiltersComponent) filtersComponent: PlaceFiltersComponent;
+	@ViewChild(PlaceMapComponent) mapComponent: PlaceMapComponent;
 
 	places: Place[] = [];
 	filteredPlaces: Place[] = [];
@@ -21,6 +23,10 @@ export class PlacesComponent {
 
 	onFilterChange() {
 		this.filterPlaces();
+	}
+
+	onPlaceSelect(place: Place) {
+		this.mapComponent.centerOnPlace(place);
 	}
 
 	filterPlaces() {

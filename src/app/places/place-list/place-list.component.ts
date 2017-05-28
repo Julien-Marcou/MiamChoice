@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Place } from '../shared/place.model';
 
@@ -9,5 +9,10 @@ import { Place } from '../shared/place.model';
 })
 
 export class PlaceListComponent {
+	@Output() placeSelect: EventEmitter<Place> = new EventEmitter();
 	@Input() places: Place[];
+
+	onPlaceSelect(place: Place) {
+		this.placeSelect.emit(place);
+	}
 }

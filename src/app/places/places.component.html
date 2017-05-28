@@ -16,6 +16,6 @@
 
 	<app-place-map [allPlaces]="places" [displayedPlaces]="filteredPlaces"></app-place-map>
 
-	<app-place-list [places]="filteredPlaces"></app-place-list>
+	<app-place-list [places]="filteredPlaces" (placeSelect)="onPlaceSelect($event)"></app-place-list>
 
 </section>

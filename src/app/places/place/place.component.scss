@@ -39,8 +39,16 @@
 		height: 5.6em; // Max height of 4 lines
 		overflow: hidden;
 	}
+	.place-see-on-map {
+		float: left;
+		color: $primary-color;
+		cursor: pointer;
+	}
 	.place-distance {
+		float: right;
 		color: $dark-gray;
-		text-align: right;
+	}
+	.place-see-on-map, .place-distance {
+		line-height: 1.2em;
 	}
 }

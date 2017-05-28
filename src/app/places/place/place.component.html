@@ -1,10 +1,14 @@
-<div class="place">
+<div class="place clearfix">
 	<h3 class="place-name">{{place.name}}</h3>
+
 	<div class="place-logo-wrapper">
 		<div class="place-logo">
 			<img src="assets/img/logo/{{place.id}}.png">
 		</div>
 	</div>
+
 	<div class="place-description">{{place.description}}</div>
+
+	<button class="place-see-on-map" (click)="selectOnMap($event)">Voir sur la carte</button>
 	<div class="place-distance">À {{place.distanceToNiji | distance}}</div>
 </div>

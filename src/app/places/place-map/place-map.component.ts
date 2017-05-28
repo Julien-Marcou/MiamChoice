@@ -46,4 +46,10 @@ export class PlaceMapComponent implements OnChanges {
 			this.googleMap.fitBounds(bounds);
 		}
 	}
+
+	centerOnPlace(place: Place) {
+		let bounds = new google.maps.LatLngBounds();
+		bounds.extend(place.marker.getPosition());
+		this.googleMap.fitBounds(bounds);
+	}
 }
