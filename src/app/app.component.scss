@@ -1,3 +1,22 @@
-.top-bar h1 {
-	margin-bottom: 0;
+@import 'global';
+
+header {
+	padding: $topbar-padding;
+	background: $light-gray;
+}
+
+.top-bar {
+	padding: 0;
+	background: none;
+
+	h1 {
+		margin-bottom: 0;
+	}
+	.menu {
+		background: none;
+		align-items: center;
+	}
+	img {
+		max-height: 66px;
+	}
 }

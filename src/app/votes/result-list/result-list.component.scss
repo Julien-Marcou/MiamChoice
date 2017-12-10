@@ -1,5 +1,9 @@
 @import 'global';
 
+.vote-chart {
+	margin-bottom: 0.5rem;
+}
+
 .vote-user-pseudo {
 	&:first-child:before {
 		content: ' (';
