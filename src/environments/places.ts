@@ -435,6 +435,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'whitefields',
+			'name': 'WhiteFields Café',
+			'latitude': 48.135160,
+			'longitude': -1.622208,
+			'description': 'Foodcourt à thématique : frenchy, italian, chinese, healthy et un bar',
+			'distance-to-niji': 2900,
+			'type': 'restaurant',
+			'keywords': ['whitefield', 'whitefields', 'café', 'française', 'italienne', 'asiatique', 'healthy'],
+			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'maurice',
 			'name': 'Maurice',
 			'latitude': 48.135439,
