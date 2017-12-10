@@ -51,4 +51,15 @@
 	.place-see-on-map, .place-distance {
 		line-height: 1.2em;
 	}
+
+	@media screen and (max-width: 760px) {
+		.place-see-on-map, {
+			float: none;
+		}
+		.place-distance {
+			text-align: right;
+			float: none;
+		}
+	}
+
 }
