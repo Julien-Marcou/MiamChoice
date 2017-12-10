@@ -279,6 +279,18 @@ export const places = {
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
+			'id': 'ahdagio',
+			'name': 'Ahdagio',
+			'latitude': 48.118616,
+			'longitude': -1.627403,
+			'description': 'Restaurant italien & Pasta',
+			'distance-to-niji': 1300,
+			'type': 'restaurant',
+			'keywords': ['ahdagio', 'italien', 'pasta'],
+			'options': ['place', 'emporte'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
 			'id': 'ange',
 			'name': 'Boulangerie Ange',
 			'latitude': 48.107362,
