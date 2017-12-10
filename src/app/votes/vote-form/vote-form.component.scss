@@ -2,7 +2,11 @@
 
 .place-item {
 	cursor: pointer;
+
 	input:checked ~ span {
 		color: $primary-color;
+	}
+	input:disabled ~ span {
+		text-decoration: line-through;
 	}
 }

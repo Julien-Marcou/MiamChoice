@@ -77,4 +77,8 @@ export class Place {
 
 		return typesMatch && optionsMatch && daysMatch && distanceMatch && keywordsMatch;
 	}
+
+	isOpen(weekDay) {
+		return this.openingDays.contains(weekDay);
+	}
 }
