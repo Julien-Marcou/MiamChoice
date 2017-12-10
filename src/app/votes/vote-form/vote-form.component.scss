@@ -2,7 +2,16 @@
 
 .place-item {
 	cursor: pointer;
+	margin-bottom: 5px;
 
+	img {
+		max-height: 30px;
+		max-width: 30px;
+	}
+	input {
+		margin: 6px;
+		vertical-align: middle;
+	}
 	input:checked ~ span {
 		color: $primary-color;
 	}
