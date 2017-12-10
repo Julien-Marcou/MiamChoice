@@ -9,4 +9,10 @@
 			margin-bottom: $value;
 		}
 	}
+
+	// Full width map on mobile
+	@include breakpoint(small only) {
+		margin-left: -(map-get($grid-column-gutter, small) / 2);
+		margin-right: -(map-get($grid-column-gutter, small) / 2);
+	}
 }

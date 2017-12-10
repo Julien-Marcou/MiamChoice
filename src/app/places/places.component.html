@@ -3,7 +3,10 @@
 	<h2>Vous cherchez un endroit où manger ?</h2>
 
 	<input id="filters-toggle" class="expand-collapse-toogle" type="checkbox">
-	<label for="filters-toggle" class="button expand-collapse-button"></label>
+	<div class="expand-collapse-button">
+		<label for="filters-toggle" class="button expand-button">+ Afficher les filtres</label>
+		<label for="filters-toggle" class="button collapse-button">- Masquer les filtres</label>
+	</div>
 	<div class="expand-collapse-section">
 		<app-place-filters (filterChange)="onFilterChange()"></app-place-filters>
 	</div>

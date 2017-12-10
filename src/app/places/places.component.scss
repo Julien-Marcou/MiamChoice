@@ -1,18 +1,29 @@
 .expand-collapse-toogle {
 	display: none;
 	visibility: hidden;
-}
-.expand-collapse-toogle ~ .expand-collapse-button:after {
-	cursor: pointer;
-	content: "+ Afficher les filtres";
-}
-.expand-collapse-toogle:checked ~ .expand-collapse-button:after {
-	content: "- Masquer les filtres";
-}
-.expand-collapse-toogle ~ .expand-collapse-section {
-	display: none;
-}
-.expand-collapse-toogle:checked ~ .expand-collapse-section {
-	display: block;
-}
 
+	~ .expand-collapse-button {
+		.expand-button {
+			display: inline-block;
+		}
+		.collapse-button {
+			display: none;
+		}
+	}
+	~ .expand-collapse-section {
+		display: none;
+	}
+}
+.expand-collapse-toogle:checked {
+	~ .expand-collapse-button {
+		.expand-button {
+			display: none;
+		}
+		.collapse-button {
+			display: inline-block;
+		}
+	}
+	~ .expand-collapse-section {
+		display: block;
+	}
+}
