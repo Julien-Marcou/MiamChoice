@@ -5,6 +5,10 @@ export const places = {
 			'value': 'Restaurant'
 		},
 		{
+			'key': 'epicerie',
+			'value': 'Épicerie'
+		},
+		{
 			'key': 'fast',
 			'value': 'Fast Food'
 		},
@@ -90,7 +94,7 @@ export const places = {
 			'description': 'Boulangerie juste en façe de Niji',
 			'distance-to-niji': 150,
 			'type': 'sandwich',
-			'keywords': ['macaron', 'sandwich', 'salade'],
+			'keywords': ['macaron', 'boulangerie', 'sandwich', 'salade'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -183,10 +187,10 @@ export const places = {
 			'name': 'Biocoop',
 			'latitude': 48.113604,
 			'longitude': -1.607218,
-			'description': 'Restaurant bio éco-résponsble',
+			'description': 'Restaurant-épicerie bio éco-résponsble',
 			'distance-to-niji': 1000,
-			'type': 'restaurant',
-			'keywords': ['biocop', 'biocoop', 'bio'],
+			'type': 'epicerie',
+			'keywords': ['biocop', 'biocoop', 'bio', 'épicerie'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -282,7 +286,7 @@ export const places = {
 			'description': 'Boulangerie de qualité',
 			'distance-to-niji': 1400,
 			'type': 'sandwich',
-			'keywords': ['ange', 'sandwich', 'pizza'],
+			'keywords': ['ange', 'boulangerie', 'sandwich', 'pizza'],
 			'options': ['place', 'emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
@@ -380,6 +384,18 @@ export const places = {
 			'type': 'restaurant',
 			'keywords': ['ptite', 'petite', 'flambée', 'pizza', 'grill', 'burger'],
 			'options': ['place'],
+			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
+		},
+		{
+			'id': 'piment-rouge',
+			'name': 'Piment Rouge',
+			'latitude': 48.114328,
+			'longitude': -1.588607,
+			'description': 'Bobun ? Bobun !',
+			'distance-to-niji': 2400,
+			'type': 'epicerie',
+			'keywords': ['piment', 'rouge', 'bobun', 'epicerie'],
+			'options': ['emporte'],
 			'opening-days': ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
 		},
 		{
