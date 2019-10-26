@@ -1,6 +1,7 @@
 import { Component, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
 
 import { Place } from '../shared/place.model';
+import { PlacesService } from '../shared/places.service';
 
 @Component({
 	selector: 'app-place-map',
@@ -14,8 +15,13 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
 	@Input() allPlaces: Place[] = [];
 	@Input() displayedPlaces: Place[] = [];
 
+	googleMapSettings: google.maps.MapOptions;
 	googleMap: google.maps.Map;
 	infoWindow: google.maps.InfoWindow;
+
+	constructor(private placesService: PlacesService) {
+		this.googleMapSettings = this.placesService.getGoogleMapSettings();
+	}
 
 	ngOnChanges() {
 		this.renderGoogleMap();
@@ -31,20 +37,7 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
 
 	renderGoogleMap() {
 		if(!this.googleMap) {
-			this.googleMap = new google.maps.Map(this.mapElement.nativeElement, {
-				center: {lat: 48.114966, lng: -1.617723},
-				zoom: 13,
-				minZoom: 12,
-				maxZoom: 18,
-				styles: [
-					{
-						featureType: 'poi',
-						stylers: [
-							{ visibility: 'off' }
-						]
-					}
-				],
-			});
+			this.googleMap = new google.maps.Map(this.mapElement.nativeElement, this.googleMapSettings);
 		}
 
 		if(!this.infoWindow) {

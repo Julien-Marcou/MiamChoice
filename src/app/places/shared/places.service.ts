@@ -1,36 +1,36 @@
 import { Injectable } from '@angular/core';
 
 import { places } from '../../../environments/places';
-import { Place } from '../shared/place.model';
+import { Place } from './place.model';
 
 @Injectable()
 export class PlacesService {
-	private places: Place[];
 
-	constructor() {
-		this.restorePlaces();
-	}
-
-	private restorePlaces() {
-		this.places = [];
-		for(let place of places.places) {
-			this.places.push(new Place(
-				place.id,
-				place.name,
-				place.latitude,
-				place.longitude,
-				place.description,
-				place['distance-to-niji'],
-				place.type,
-				place.keywords,
-				place.options,
-				place['opening-days']
-			));
-		}
-	}
+	private places: Place[] = [];
 
 	getPlaces(): Place[] {
+		if (this.places.length !== places.places.length) {
+			this.places = [];
+			for(let place of places.places) {
+				this.places.push(new Place(
+					place.id,
+					place.name,
+					place.latitude,
+					place.longitude,
+					place.description,
+					place['distance-to-niji'],
+					place.type,
+					place.keywords,
+					place.options,
+					place['opening-days']
+				));
+			}
+		}
 		return this.places;
+	}
+
+	getGoogleMapSettings(): google.maps.MapOptions {
+		return places.googleMapSettings as google.maps.MapOptions;
 	}
 
 	getPlaceTypes() {
