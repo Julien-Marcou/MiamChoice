@@ -35,7 +35,15 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
 				center: {lat: 48.114966, lng: -1.617723},
 				zoom: 13,
 				minZoom: 12,
-				maxZoom: 18
+				maxZoom: 18,
+				styles: [
+					{
+						featureType: 'poi',
+						stylers: [
+							{ visibility: 'off' }
+						]
+					}
+				],
 			});
 		}
 
