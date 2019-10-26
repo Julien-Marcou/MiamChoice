@@ -7,7 +7,7 @@
 		</div>
 	</div>
 
-	<div class="place-description">{{place.description}}</div>
+	<div class="place-description" [innerHTML]="place.description"></div>
 
 	<button class="place-see-on-map" (click)="selectOnMap($event)">Voir sur la carte</button>
 	<div class="place-distance">À {{place.distanceToNiji | distance}}</div>
