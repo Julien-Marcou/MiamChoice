@@ -1,6 +1,7 @@
 import { Component, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
 
 import { Place } from '../shared/place.model';
+import {ResultListComponent} from '../../votes/result-list/result-list.component';
 
 @Component({
 	selector: 'app-place-map',
@@ -9,7 +10,7 @@ import { Place } from '../shared/place.model';
 })
 
 export class PlaceMapComponent implements OnChanges, OnDestroy {
-	@ViewChild('map') mapElement;
+	@ViewChild('map', {static: false}) mapElement;
 
 	@Input() allPlaces: Place[] = [];
 	@Input() displayedPlaces: Place[] = [];

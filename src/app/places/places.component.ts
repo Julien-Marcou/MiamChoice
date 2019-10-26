@@ -11,8 +11,8 @@ import { PlaceMapComponent } from './place-map/place-map.component';
 })
 
 export class PlacesComponent {
-	@ViewChild(PlaceFiltersComponent) filtersComponent: PlaceFiltersComponent;
-	@ViewChild(PlaceMapComponent) mapComponent: PlaceMapComponent;
+	@ViewChild(PlaceFiltersComponent, {static: false}) filtersComponent: PlaceFiltersComponent;
+	@ViewChild(PlaceMapComponent, {static: false}) mapComponent: PlaceMapComponent;
 
 	places: Place[] = [];
 	filteredPlaces: Place[] = [];

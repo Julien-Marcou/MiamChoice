@@ -12,7 +12,7 @@ import { ResultListComponent } from './result-list/result-list.component';
 })
 
 export class VotesComponent {
-	@ViewChild(ResultListComponent) resultsComponent: ResultListComponent;
+	@ViewChild(ResultListComponent, {static: false}) resultsComponent: ResultListComponent;
 
 	places: Place[];
 	users: {};

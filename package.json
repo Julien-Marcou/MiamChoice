@@ -8,28 +8,28 @@
     "lint": "ng lint"
   },
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
-    "chart.js": "^2.5.0",
-    "core-js": "^2.4.1",
-    "foundation-sites": "^6.4.4-rc1",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "@angular/common": "^8.2.12",
+    "@angular/compiler": "^8.2.12",
+    "@angular/core": "^8.2.12",
+    "@angular/forms": "^8.2.12",
+    "@angular/platform-browser": "^8.2.12",
+    "@angular/platform-browser-dynamic": "^8.2.12",
+    "@angular/router": "^8.2.12",
+    "chart.js": "^2.9.0",
+    "core-js": "^3.3.4",
+    "foundation-sites": "^6.5.3",
+    "rxjs": "^6.5.3",
+    "tslib": "^1.10.0",
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
-    "node-sass": "^4.5.2",
-    "sass-loader": "^6.0.3",
-    "ts-node": "~2.0.0",
-    "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "@angular-devkit/build-angular": "~0.803.14",
+    "@angular/cli": "^8.3.14",
+    "@angular/compiler-cli": "^8.2.12",
+    "@types/node": "^12.11.7",
+    "codelyzer": "^5.2.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.5.3"
   }
 }
