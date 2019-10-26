@@ -1,6 +1,6 @@
 import { Directive, AfterViewInit, OnChanges, Input, ElementRef } from '@angular/core';
 
-import 'chart.js';
+import { Chart } from 'chart.js';
 
 @Directive({ selector: '[appChart]' })
 export class ChartDirective implements AfterViewInit, OnChanges {
@@ -8,7 +8,7 @@ export class ChartDirective implements AfterViewInit, OnChanges {
 
 	element: ElementRef;
 	canvas: HTMLCanvasElement;
-	chart: any;
+	chart: Chart;
 
 	constructor(element: ElementRef) {
 		this.element = element;
