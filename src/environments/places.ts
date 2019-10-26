@@ -3,7 +3,7 @@ export const places = {
 		center: {lat: 45.738245, lng: 4.814722},
 		zoom: 16,
 		minZoom: 15,
-		maxZoom: 20,
+		maxZoom: 19,
 		styles: [
 			{
 				featureType: 'poi',

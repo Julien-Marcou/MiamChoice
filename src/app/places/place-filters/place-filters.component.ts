@@ -17,7 +17,7 @@ export class PlaceFiltersComponent implements OnInit {
 	types: any[];
 	options: any[];
 	days: any[];
-	radius = 5000;
+	radius = 1000;
 	keywords = '';
 
 	searchInput = new FormControl();

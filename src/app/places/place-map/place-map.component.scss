@@ -1,7 +1,8 @@
 @import 'global';
 
 .place-map {
-	height: 500px;
+	height: 700px;
+	max-height: 90vh;
 
 	// Responsive margins using foundation gutters
 	@each $breakpoint, $value in $grid-column-gutter {
