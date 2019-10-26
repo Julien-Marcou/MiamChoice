@@ -18,11 +18,11 @@ export class PlacesService {
 					place.latitude,
 					place.longitude,
 					place.description,
-					place['distance-to-niji'],
+					place.distanceToNiji,
 					place.type,
 					place.keywords,
 					place.options,
-					place['opening-days']
+					place.openingDays
 				));
 			}
 		}
