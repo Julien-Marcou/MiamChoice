@@ -10,7 +10,7 @@ import {ResultListComponent} from '../../votes/result-list/result-list.component
 })
 
 export class PlaceMapComponent implements OnChanges, OnDestroy {
-	@ViewChild('map', {static: false}) mapElement;
+	@ViewChild('map', {static: true}) mapElement;
 
 	@Input() allPlaces: Place[] = [];
 	@Input() displayedPlaces: Place[] = [];

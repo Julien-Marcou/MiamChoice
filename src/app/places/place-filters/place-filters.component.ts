@@ -1,8 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
+import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
 
 import { PlacesService } from '../shared/places.service';
 
@@ -44,10 +43,13 @@ export class PlaceFiltersComponent {
 		this.days[weekDay].checked = true;
 		this.days[weekDay].isToday = true;
 
-		this.searchInput.valueChanges
-			.debounceTime(400)
-			.distinctUntilChanged()
-			.subscribe(keywords => this.keywordsChange());
+		this.searchInput.valueChanges.pipe(
+			debounceTime(400),
+			distinctUntilChanged()
+		).subscribe(keywords => {
+			this.keywords = keywords;
+			this.keywordsChange();
+		});
 
 		this.filterChange.emit();
 	}

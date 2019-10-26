@@ -54,14 +54,15 @@ export class UsersService {
 		return this.http.get('http://miam-choice.julien-marcou.fr/api/users')
 			.toPromise()
 			.then(users => {
+				let mappedUsers = [];
 				for(let uuid in users) {
 					if(users.hasOwnProperty(uuid)) {
 						let user = users[uuid];
-						users[uuid] = new User(user.uuid, user.pseudo, user.votes, user.lastUpdate);
+						mappedUsers[uuid] = new User(user.uuid, user.pseudo, user.votes, user.lastUpdate);
 					}
 				}
-				users[this.currentUser.uuid] = this.currentUser;
-				return users;
+				mappedUsers[this.currentUser.uuid] = this.currentUser;
+				return mappedUsers;
 			})
 			.catch(error => Promise.reject(error));
 	}
