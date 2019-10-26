@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { VotesRoutingModule } from './votes-routing.module';
 import { ChartDirective } from './shared/chart.directive';
@@ -13,7 +12,6 @@ import { ResultListComponent } from './result-list/result-list.component';
 	imports: [
 		CommonModule,
 		FormsModule,
-		HttpModule,
 		VotesRoutingModule
 	],
 	declarations: [

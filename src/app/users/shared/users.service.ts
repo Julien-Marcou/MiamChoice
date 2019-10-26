@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-
-import 'rxjs/add/operator/toPromise';
+import { HttpClient } from '@angular/common/http';
 
 import { User } from './user.model';
 
@@ -9,7 +7,7 @@ import { User } from './user.model';
 export class UsersService {
 	private currentUser: User;
 
-	constructor(private http: Http) {
+	constructor(private http: HttpClient) {
 		this.restoreCurrentUser();
 	}
 
@@ -43,7 +41,6 @@ export class UsersService {
 		user.pseudo = user.pseudo.trim();
 		return this.http.post('http://miam-choice.julien-marcou.fr/api/user', user)
 			.toPromise()
-			.then(response => response.json())
 			.catch(error => {
 				let response = error.json();
 				if(response.error && response.message) {
@@ -56,8 +53,7 @@ export class UsersService {
 	getUsers(): Promise<User[]> {
 		return this.http.get('http://miam-choice.julien-marcou.fr/api/users')
 			.toPromise()
-			.then(response => {
-				let users = response.json().users;
+			.then(users => {
 				for(let uuid in users) {
 					if(users.hasOwnProperty(uuid)) {
 						let user = users[uuid];
