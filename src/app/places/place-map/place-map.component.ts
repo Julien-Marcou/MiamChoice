@@ -1,7 +1,6 @@
 import { Component, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
 
 import { Place } from '../shared/place.model';
-import {ResultListComponent} from '../../votes/result-list/result-list.component';
 
 @Component({
 	selector: 'app-place-map',
@@ -15,8 +14,8 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
 	@Input() allPlaces: Place[] = [];
 	@Input() displayedPlaces: Place[] = [];
 
-	googleMap: any;
-	infoWindow: any;
+	googleMap: google.maps.Map;
+	infoWindow: google.maps.InfoWindow;
 
 	ngOnChanges() {
 		this.renderGoogleMap();
