@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { PlacesService } from '../shared/places.service';
 	styleUrls: ['./place-filters.component.scss']
 })
 
-export class PlaceFiltersComponent {
+export class PlaceFiltersComponent implements OnInit {
 	@Output() filterChange: EventEmitter<any> = new EventEmitter();
 
 	types: any[];
@@ -50,7 +50,9 @@ export class PlaceFiltersComponent {
 			this.keywords = keywords;
 			this.keywordsChange();
 		});
+	}
 
+	ngOnInit() {
 		this.filterChange.emit();
 	}
 

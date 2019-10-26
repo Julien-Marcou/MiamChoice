@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { Place } from './shared/place.model';
-import { PlacesService } from '../places/shared/places.service';
+import { PlacesService } from './shared/places.service';
 import { PlaceFiltersComponent } from './place-filters/place-filters.component';
 import { PlaceMapComponent } from './place-map/place-map.component';
 
@@ -11,7 +11,7 @@ import { PlaceMapComponent } from './place-map/place-map.component';
 })
 
 export class PlacesComponent {
-	@ViewChild(PlaceFiltersComponent, {static: false}) filtersComponent: PlaceFiltersComponent;
+	@ViewChild(PlaceFiltersComponent, {static: true}) filtersComponent: PlaceFiltersComponent;
 	@ViewChild(PlaceMapComponent, {static: false}) mapComponent: PlaceMapComponent;
 
 	places: Place[] = [];
