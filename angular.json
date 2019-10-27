@@ -24,7 +24,7 @@
             "assets": [
               "src/assets",
               "src/api",
-              "src/favicon.ico",
+              "src/favicon.png",
               "src/.htaccess"
             ],
             "styles": [
