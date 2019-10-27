@@ -165,7 +165,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'Dock40',
+			id: 'dock-40',
 			name: 'Dock 40',
 			latitude: 45.739762,
 			longitude: 4.814390,
@@ -177,7 +177,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'moulin',
+			id: 'le-moulin',
 			name: 'Le Moulin',
 			latitude: 45.734090,
 			longitude: 4.815726,
@@ -213,7 +213,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'steak-shake',
+			id: 'steak-n-shake',
 			name: 'Steak \'n Shake',
 			latitude: 45.741408,
 			longitude: 4.816396,
@@ -237,7 +237,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'gomex',
+			id: 'go-mex',
 			name: 'Go Mex',
 			latitude: 45.741500,
 			longitude: 4.816120,
@@ -261,7 +261,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'criee',
+			id: 'la-criee',
 			name: 'La Criée',
 			latitude: 45.741852,
 			longitude: 4.815881,
@@ -273,7 +273,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'paradis-fruit',
+			id: 'le-paradis-du-fruit',
 			name: 'Le Paradis du Fruit',
 			latitude: 45.741744,
 			longitude: 4.816232,
@@ -285,8 +285,8 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'amelie-crepe',
-			name: 'Amélie Crêpe',
+			id: 'amelie-crepes',
+			name: 'Amélie Crêpes',
 			latitude: 45.740989,
 			longitude: 4.817533,
 			description: 'Galettes Bretonnes',
@@ -334,7 +334,7 @@ export const places = {
 		},
 		{
 			id: 'hippopotamus',
-			name: 'L\'Hippopotamus',
+			name: 'Hippopotamus',
 			latitude: 45.740982,
 			longitude: 4.818336,
 			description: 'Steak house',
@@ -405,7 +405,7 @@ export const places = {
 			openingDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
 		},
 		{
-			id: 'buger-king',
+			id: 'burger-king',
 			name: 'Burger King',
 			latitude: 45.740905,
 			longitude: 4.818946,
@@ -454,7 +454,7 @@ export const places = {
 		},
 		{
 			id: 'msb',
-			name: 'My Salad Bar',
+			name: 'Mon Salade Bar',
 			latitude: 45.742643,
 			longitude: 4.818115,
 			description: 'Bar à salade pour composer la salade de vos rêves',
