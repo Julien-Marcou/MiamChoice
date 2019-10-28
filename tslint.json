@@ -12,14 +12,21 @@
     "curly": true,
     "eofline": true,
     "forin": true,
-    "import-blacklist": [true],
+    "import-blacklist": [
+      true
+    ],
     "import-spacing": true,
     "indent": [
       true,
-      "tabs"
+      "spaces",
+      4
     ],
     "interface-over-type-literal": true,
     "label-position": true,
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
     "max-line-length": [
       false,
       140
@@ -27,8 +34,14 @@
     "member-access": false,
     "member-ordering": [
       true,
-      "static-before-instance",
-      "variables-before-functions"
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "constructor",
+          "static-method"
+        ]
+      }
     ],
     "no-arg": true,
     "no-bitwise": true,
@@ -46,7 +59,10 @@
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-    "no-inferrable-types": [true, "ignore-params"],
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,
@@ -68,7 +84,20 @@
     ],
     "radix": true,
     "semicolon": [
+      true,
       "always"
+    ],
+    "trailing-comma":  [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "always"
+        },
+        "esSpecCompliant": true
+      }
     ],
     "triple-equals": [
       true,
@@ -89,13 +118,25 @@
     "variable-name": false,
     "whitespace": [
       true,
+      "check-branch",
       "check-decl",
       "check-operator",
       "check-separator",
-      "check-type"
+      "check-type",
+      "check-preblock"
     ],
-    "directive-selector": [true, "attribute", "app", "camelCase"],
-    "component-selector": [true, "element", "app", "kebab-case"],
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
     "no-inputs-metadata-property": true,
     "no-outputs-metadata-property": true,
     "no-host-metadata-property": true,
