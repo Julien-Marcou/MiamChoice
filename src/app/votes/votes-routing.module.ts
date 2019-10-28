@@ -4,19 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { VotesComponent } from './votes.component';
 
 const votesRoutes: Routes = [
-	{
-		path: 'votes',
-		component: VotesComponent
-	}
+    {
+        path: 'votes',
+        component: VotesComponent,
+    },
 ];
 
 @NgModule({
-	imports: [
-		RouterModule.forChild(votesRoutes)
-	],
-	exports: [
-		RouterModule
-	]
+    imports: [
+        RouterModule.forChild(votesRoutes),
+    ],
+    exports: [
+        RouterModule,
+    ],
 })
 
 export class VotesRoutingModule { }

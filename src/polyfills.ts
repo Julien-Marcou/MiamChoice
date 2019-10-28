@@ -63,23 +63,23 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  */
 
 if (!Array.prototype.contains) {
-	Array.prototype.contains = function<T>(value: T): boolean {
-		return this.indexOf(value) > -1;
-	};
+    Array.prototype.contains = function<T>(value: T): boolean {
+        return this.indexOf(value) > -1;
+    };
 }
 
 if (!Array.prototype.remove) {
-	Array.prototype.remove = function<T>(value: T): T {
-		let index = this.indexOf(value);
-		if(index > -1) {
-			return this.splice(index, 1)[0];
-		}
-		return null;
-	};
+    Array.prototype.remove = function<T>(value: T): T {
+        let index = this.indexOf(value);
+        if (index > -1) {
+            return this.splice(index, 1)[0];
+        }
+        return null;
+    };
 }
 
 if (!Array.prototype.isEmpty) {
-	Array.prototype.isEmpty = function<T>(): boolean {
-		return this.length === 0;
-	};
+    Array.prototype.isEmpty = function<T>(): boolean {
+        return this.length === 0;
+    };
 }

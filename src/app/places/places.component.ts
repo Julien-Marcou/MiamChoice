@@ -6,42 +6,42 @@ import { PlaceFiltersComponent } from './place-filters/place-filters.component';
 import { PlaceMapComponent } from './place-map/place-map.component';
 
 @Component({
-	templateUrl: './places.component.html',
-	styleUrls: ['./places.component.scss']
+    templateUrl: './places.component.html',
+    styleUrls: ['./places.component.scss'],
 })
 
 export class PlacesComponent {
-	@ViewChild(PlaceFiltersComponent, {static: true}) filtersComponent: PlaceFiltersComponent;
-	@ViewChild(PlaceMapComponent, {static: false}) mapComponent: PlaceMapComponent;
+    @ViewChild(PlaceFiltersComponent, {static: true}) filtersComponent: PlaceFiltersComponent;
+    @ViewChild(PlaceMapComponent, {static: false}) mapComponent: PlaceMapComponent;
 
-	places: Place[] = [];
-	filteredPlaces: Place[] = [];
+    places: Place[] = [];
+    filteredPlaces: Place[] = [];
 
-	constructor(private placesService: PlacesService) {
-		this.places = this.placesService.getPlaces();
-	}
+    constructor(private placesService: PlacesService) {
+        this.places = this.placesService.getPlaces();
+    }
 
-	onFilterChange() {
-		this.filterPlaces();
-	}
+    onFilterChange() {
+        this.filterPlaces();
+    }
 
-	onPlaceSelect(place: Place) {
-		this.mapComponent.centerOnPlace(place);
-	}
+    onPlaceSelect(place: Place) {
+        this.mapComponent.centerOnPlace(place);
+    }
 
-	filterPlaces() {
-		let selectedTypes = this.filtersComponent.getSelectedTypes();
-		let selectedOptions = this.filtersComponent.getSelectedOptions();
-		let selectedDays = this.filtersComponent.getSelectedDays();
-		let radius = this.filtersComponent.getRadius();
-		let keywords = this.filtersComponent.getKeywords();
+    filterPlaces() {
+        let selectedTypes = this.filtersComponent.getSelectedTypes();
+        let selectedOptions = this.filtersComponent.getSelectedOptions();
+        let selectedDays = this.filtersComponent.getSelectedDays();
+        let radius = this.filtersComponent.getRadius();
+        let keywords = this.filtersComponent.getKeywords();
 
-		let filteredPlaces: Place[] = [];
-		for(let place of this.places) {
-			if(place.id === 'niji' || place.match(selectedTypes, selectedOptions, selectedDays, radius, keywords)) {
-				filteredPlaces.push(place);
-			}
-		}
-		this.filteredPlaces = filteredPlaces;
-	}
+        let filteredPlaces: Place[] = [];
+        for (let place of this.places) {
+            if (place.id === 'niji' || place.match(selectedTypes, selectedOptions, selectedDays, radius, keywords)) {
+                filteredPlaces.push(place);
+            }
+        }
+        this.filteredPlaces = filteredPlaces;
+    }
 }

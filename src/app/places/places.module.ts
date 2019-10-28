@@ -12,20 +12,20 @@ import { PlaceMapComponent } from './place-map/place-map.component';
 import { PlacesService } from './shared/places.service';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		ReactiveFormsModule,
-		PlacesRoutingModule
-	],
-	declarations: [
-		DistancePipe,
-		PlacesComponent,
-		PlaceComponent,
-		PlaceFiltersComponent,
-		PlaceListComponent,
-		PlaceMapComponent
-	]
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        PlacesRoutingModule,
+    ],
+    declarations: [
+        DistancePipe,
+        PlacesComponent,
+        PlaceComponent,
+        PlaceFiltersComponent,
+        PlaceListComponent,
+        PlaceMapComponent,
+    ],
 })
 
 export class PlacesModule { }

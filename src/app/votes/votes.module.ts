@@ -9,17 +9,17 @@ import { VoteFormComponent } from './vote-form/vote-form.component';
 import { ResultListComponent } from './result-list/result-list.component';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		VotesRoutingModule
-	],
-	declarations: [
-		ChartDirective,
-		VotesComponent,
-		VoteFormComponent,
-		ResultListComponent
-	]
+    imports: [
+        CommonModule,
+        FormsModule,
+        VotesRoutingModule,
+    ],
+    declarations: [
+        ChartDirective,
+        VotesComponent,
+        VoteFormComponent,
+        ResultListComponent,
+    ],
 })
 
 export class VotesModule { }

@@ -13,22 +13,22 @@ import { UsersModule } from './users/users.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-	imports: [
-		BrowserModule,
-		CoreModule,
-		PlacesModule,
-		VotesModule,
-		UsersModule,
-		AppRoutingModule,
-	],
-	declarations: [
-		AppComponent
-	],
-	providers: [
-		PlacesService,
-		UsersService
-	],
-	bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        CoreModule,
+        PlacesModule,
+        VotesModule,
+        UsersModule,
+        AppRoutingModule,
+    ],
+    declarations: [
+        AppComponent,
+    ],
+    providers: [
+        PlacesService,
+        UsersService,
+    ],
+    bootstrap: [AppComponent],
 })
 
 export class AppModule { }
