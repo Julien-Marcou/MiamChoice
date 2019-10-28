@@ -1,7 +1,6 @@
-import { Component, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
-
-import { Place } from '../shared/place.model';
-import { PlacesService } from '../shared/places.service';
+import {Component, Input, OnChanges, OnDestroy, ViewChild} from '@angular/core';
+import {Place} from '../shared/place.model';
+import {PlacesService} from '../shared/places.service';
 
 @Component({
     selector: 'app-place-map',

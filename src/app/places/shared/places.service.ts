@@ -1,7 +1,6 @@
-import { Injectable } from '@angular/core';
-
-import { places } from '../../../environments/places';
-import { Place } from './place.model';
+import {Injectable} from '@angular/core';
+import {places} from '../../../environments/places';
+import {Place} from './place.model';
 
 @Injectable()
 export class PlacesService {

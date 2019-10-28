@@ -1,6 +1,5 @@
-import { Directive, AfterViewInit, OnChanges, Input, ElementRef } from '@angular/core';
-
-import { Chart } from 'chart.js';
+import {AfterViewInit, Directive, ElementRef, Input, OnChanges} from '@angular/core';
+import {Chart} from 'chart.js';
 
 @Directive({ selector: '[appChart]' })
 export class ChartDirective implements AfterViewInit, OnChanges {

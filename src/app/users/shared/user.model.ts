@@ -1,4 +1,4 @@
-import { Place } from '../../places/shared/place.model';
+import {Place} from '../../places/shared/place.model';
 
 export class User {
     uuid: string;

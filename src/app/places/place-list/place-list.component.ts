@@ -1,6 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-
-import { Place } from '../shared/place.model';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Place} from '../shared/place.model';
 
 @Component({
     selector: 'app-place-list',

@@ -1,9 +1,7 @@
-import { Component, Output, EventEmitter, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {FormControl} from '@angular/forms';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
-
-import { PlacesService } from '../shared/places.service';
+import {PlacesService} from '../shared/places.service';
 
 @Component({
     selector: 'app-place-filters',

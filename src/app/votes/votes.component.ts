@@ -1,5 +1,4 @@
 import {Component, ViewChild} from '@angular/core';
-
 import {Place} from '../places/shared/place.model';
 import {User} from '../users/shared/user.model';
 import {PlacesService} from '../places/shared/places.service';

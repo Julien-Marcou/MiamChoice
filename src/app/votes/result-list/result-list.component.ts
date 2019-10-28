@@ -1,7 +1,6 @@
-import { Component, OnChanges, ViewChild, Input } from '@angular/core';
-
-import { Place } from '../../places/shared/place.model';
-import { Vote } from '../shared/vote.model';
+import {Component, Input, OnChanges} from '@angular/core';
+import {Place} from '../../places/shared/place.model';
+import {Vote} from '../shared/vote.model';
 
 @Component({
     selector: 'app-result-list',

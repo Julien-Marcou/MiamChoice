@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
-
-import { Place } from './shared/place.model';
-import { PlacesService } from './shared/places.service';
-import { PlaceFiltersComponent } from './place-filters/place-filters.component';
-import { PlaceMapComponent } from './place-map/place-map.component';
+import {Component, ViewChild} from '@angular/core';
+import {Place} from './shared/place.model';
+import {PlacesService} from './shared/places.service';
+import {PlaceFiltersComponent} from './place-filters/place-filters.component';
+import {PlaceMapComponent} from './place-map/place-map.component';
 
 @Component({
     templateUrl: './places.component.html',

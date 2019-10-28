@@ -1,5 +1,5 @@
-import { Place } from '../../places/shared/place.model';
-import { User } from '../../users/shared/user.model';
+import {Place} from '../../places/shared/place.model';
+import {User} from '../../users/shared/user.model';
 
 export class Vote {
     place: Place;
