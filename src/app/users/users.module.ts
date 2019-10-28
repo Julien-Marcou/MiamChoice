@@ -9,4 +9,5 @@ import {HttpClientModule} from '@angular/common/http';
     ],
 })
 
-export class UsersModule { }
+export class UsersModule {
+}

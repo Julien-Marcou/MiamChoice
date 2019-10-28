@@ -21,4 +21,5 @@ import {ResultListComponent} from './result-list/result-list.component';
     ],
 })
 
-export class VotesModule { }
+export class VotesModule {
+}

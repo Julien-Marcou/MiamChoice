@@ -18,4 +18,5 @@ const placesRoutes: Routes = [
     ],
 })
 
-export class PlacesRoutingModule { }
+export class PlacesRoutingModule {
+}

@@ -18,4 +18,5 @@ const votesRoutes: Routes = [
     ],
 })
 
-export class VotesRoutingModule { }
+export class VotesRoutingModule {
+}

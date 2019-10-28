@@ -5,4 +5,5 @@ import {Component} from '@angular/core';
     styleUrls: ['./not-found.component.scss'],
 })
 
-export class NotFoundComponent { }
+export class NotFoundComponent {
+}

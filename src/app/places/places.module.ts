@@ -26,4 +26,5 @@ import {PlaceMapComponent} from './place-map/place-map.component';
     ],
 })
 
-export class PlacesModule { }
+export class PlacesModule {
+}

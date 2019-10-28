@@ -1,6 +1,9 @@
 export const places = {
     googleMapSettings: {
-        center: {lat: 45.738245, lng: 4.814722},
+        center: {
+            lat: 45.738245,
+            lng: 4.814722,
+        },
         zoom: 16,
         minZoom: 15,
         maxZoom: 19,
@@ -8,7 +11,7 @@ export const places = {
             {
                 featureType: 'poi',
                 stylers: [
-                    { visibility: 'off' },
+                    {visibility: 'off'},
                 ],
             },
         ],
