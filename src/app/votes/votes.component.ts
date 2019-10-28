@@ -1,10 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 
-import { Place } from '../places/shared/place.model';
-import { User } from '../users/shared/user.model';
-import { PlacesService } from '../places/shared/places.service';
-import { UsersService } from '../users/shared/users.service';
-import { ResultListComponent } from './result-list/result-list.component';
+import {Place} from '../places/shared/place.model';
+import {User} from '../users/shared/user.model';
+import {PlacesService} from '../places/shared/places.service';
+import {UsersService} from '../users/shared/users.service';
+import {ResultListComponent} from './result-list/result-list.component';
 
 @Component({
 	templateUrl: './votes.component.html',
@@ -28,10 +28,9 @@ export class VotesComponent {
 
 	onVoteSubmit() {
 		this.usersService.postUser(this.user).then(response => {
-			if(response.error) {
+			if (response.error) {
 				alert(response.message);
-			}
-			else {
+			} else {
 				this.usersService.saveCurrentUser();
 				this.resultsComponent.updateResults();
 			}
