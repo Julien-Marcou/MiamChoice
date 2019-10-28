@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
-import { User } from './user.model';
+import {User} from './user.model';
 
 @Injectable()
 export class UsersService {
@@ -16,7 +16,7 @@ export class UsersService {
 		let user = JSON.parse(localStorage.getItem('user'));
 		if (user && typeof user === 'object') {
 			this.currentUser = new User(user.uuid, user.pseudo, user.votes, user.lastUpdate);
-			if(!this.currentUser.upToDate()) {
+			if (!this.currentUser.upToDate()) {
 				this.currentUser.refresh();
 			}
 		}
@@ -43,7 +43,7 @@ export class UsersService {
 			.toPromise()
 			.catch(error => {
 				let response = error.json();
-				if(response.error && response.message) {
+				if (response.error && response.message) {
 					return response;
 				}
 				Promise.reject(error);
@@ -53,11 +53,11 @@ export class UsersService {
 	getUsers(): Promise<User[]> {
 		return this.http.get('http://miam-choice.julien-marcou.fr/api/users')
 			.toPromise()
-			.then(users => {
+			.then((users: any) => {
 				let mappedUsers = [];
-				for(let uuid in users) {
-					if(users.hasOwnProperty(uuid)) {
-						let user = users[uuid];
+				for (let uuid in users.users) {
+					if (users.users.hasOwnProperty(uuid)) {
+						let user = users.users[uuid];
 						mappedUsers[uuid] = new User(user.uuid, user.pseudo, user.votes, user.lastUpdate);
 					}
 				}
@@ -70,9 +70,9 @@ export class UsersService {
 	randomGuid(): string {
 		/* tslint:disable */
 		let pattern = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx';
-		return pattern.replace(/[xy]/g, function(char) {
-			let random = Math.random()*16 | 0;
-			let value = char === 'x' ? random : (random&0x3 | 0x8);
+		return pattern.replace(/[xy]/g, function (char) {
+			let random = Math.random() * 16 | 0;
+			let value = char === 'x' ? random : (random & 0x3 | 0x8);
 			return value.toString(16);
 		});
 		/* tslint:enable */
