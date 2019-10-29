@@ -18,7 +18,7 @@
 	<h2>Résultats</h2>
 
 	<div class="filtered-results-warning alert" *ngIf="places.length !== filteredPlaces.length">
-		Certains résultats ont été filtrés et ne sont pas affiché
+		Certains résultats ont été filtrés et ne sont pas affichés
 	</div>
 
 	<app-place-map [allPlaces]="places" [displayedPlaces]="filteredPlaces"></app-place-map>
