@@ -1,3 +1,5 @@
+@import 'global';
+
 .expand-collapse-toogle {
 	display: none;
 	visibility: hidden;
@@ -26,4 +28,10 @@
 	~ .expand-collapse-section {
 		display: block;
 	}
+}
+
+.filtered-results-warning {
+	font-size: 0.95rem;
+	margin-bottom: .5rem;
+	color: $alert-color;
 }
