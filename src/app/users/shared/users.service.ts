@@ -60,7 +60,6 @@ export class UsersService {
                         mappedUsers[uuid] = new User(user.uuid, user.pseudo, user.votes, user.lastUpdate);
                     }
                 }
-                mappedUsers[this.currentUser.uuid] = this.currentUser;
                 return mappedUsers;
             })
             .catch(error => Promise.reject(error));

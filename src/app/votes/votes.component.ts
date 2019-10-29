@@ -31,7 +31,7 @@ export class VotesComponent {
                 alert(response.message);
             } else {
                 this.usersService.saveCurrentUser();
-                this.resultsComponent.updateResults();
+                this.usersService.getUsers().then(users => this.users = users);
             }
         });
     }
