@@ -11,7 +11,7 @@ export class Vote {
     }
 
     hasUser(user: User): boolean {
-        return this.users.contains(user);
+        return this.users.includes(user);
     }
 
     addUser(user: User) {
@@ -20,7 +20,7 @@ export class Vote {
         }
     }
 
-    isEmpty(): boolean {
-        return this.users.isEmpty();
+    hasVote(): boolean {
+        return !this.users || !this.users.length;
     }
 }

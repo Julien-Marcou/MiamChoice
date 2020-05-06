@@ -58,19 +58,19 @@ export class Place {
             }
         }
         for (let option of options) {
-            if (this.options.contains(option.key)) {
+            if (this.options.includes(option.key)) {
                 optionsMatch = true;
                 break;
             }
         }
         for (let day of days) {
-            if (this.openingDays.contains(day.key)) {
+            if (this.openingDays.includes(day.key)) {
                 daysMatch = true;
                 break;
             }
         }
         for (let keyword of keywords) {
-            if (this.keywords.contains(keyword)) {
+            if (this.keywords.includes(keyword)) {
                 keywordsMatch = true;
                 break;
             }
@@ -80,6 +80,6 @@ export class Place {
     }
 
     isOpen(weekDay) {
-        return this.openingDays.contains(weekDay);
+        return this.openingDays.includes(weekDay);
     }
 }

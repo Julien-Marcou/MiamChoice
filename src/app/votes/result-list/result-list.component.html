@@ -1,7 +1,5 @@
-<div class="vote-empty" *ngIf="votes.isEmpty()">Personne n'a voté pour le moment.</div>
-
-<ng-container *ngIf="!votes.isEmpty()">
-	<div appChart class="vote-chart" appChart [config]="chartConfig"></div>
+<ng-container *ngIf="votes.length > 0; else noVoteTemplate">
+  <div appChart class="vote-chart" appChart [config]="chartConfig"></div>
 
 	<ul class="vote-list">
 		<li class="vote-item" *ngFor="let vote of votes">
@@ -13,3 +11,7 @@
 		</li>
 	</ul>
 </ng-container>
+
+<ng-template #noVoteTemplate>
+  <div class="vote-empty">Personne n'a voté pour le moment.</div>
+</ng-template>

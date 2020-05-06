@@ -5,6 +5,16 @@
     "baseUrl": "",
     "types": [
       "googlemaps"
+    ],
+    "typeRoots": [
+      "typing.d.ts"
     ]
-  }
+  },
+  "files": [
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
 }

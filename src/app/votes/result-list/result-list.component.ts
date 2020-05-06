@@ -57,7 +57,7 @@ export class ResultListComponent implements OnChanges {
                     }
                 }
             }
-            if (!vote.isEmpty()) {
+            if (!vote.hasVote()) {
                 this.chartConfig.data.labels.push(place.name);
                 this.chartConfig.data.datasets[0].data.push(vote.users.length);
                 this.votes.push(vote);

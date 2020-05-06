@@ -49,7 +49,7 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
         }
 
         for (let place of this.allPlaces) {
-            if (this.displayedPlaces.contains(place)) {
+            if (this.displayedPlaces.includes(place)) {
                 if (place.marker.getMap() !== this.googleMap) {
                     place.marker.setMap(this.googleMap);
                 }
@@ -59,7 +59,7 @@ export class PlaceMapComponent implements OnChanges, OnDestroy {
             }
         }
 
-        if (!this.displayedPlaces.isEmpty()) {
+        if (this.displayedPlaces.length > 0) {
             this.centerOnPlaces(this.displayedPlaces);
         }
     }
