@@ -38,7 +38,7 @@ export class UsersService {
 
     postUser(user: User): Promise<any> {
         user.pseudo = user.pseudo.trim();
-        return this.http.post('http://miam-choice.julien-marcou.fr/api/user', user)
+        return this.http.post('https://miam-choice.julien-marcou.fr/api/user', user)
             .toPromise()
             .catch(error => {
                 let response = error.json();
@@ -50,7 +50,7 @@ export class UsersService {
     }
 
     getUsers(): Promise<User[]> {
-        return this.http.get('http://miam-choice.julien-marcou.fr/api/users')
+        return this.http.get('https://miam-choice.julien-marcou.fr/api/users')
             .toPromise()
             .then((users: any) => {
                 let mappedUsers = [];
